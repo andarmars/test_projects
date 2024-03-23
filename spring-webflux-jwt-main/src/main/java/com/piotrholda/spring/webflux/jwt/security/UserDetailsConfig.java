@@ -18,8 +18,8 @@ class UserDetailsConfig {
     @Bean
     MapReactiveUserDetailsService userDetailsService(PasswordEncoder passwordEncoder) {
         var user = User.builder()
-                .username("adamk")
-                .password(passwordEncoder().encode("password"))
+                .username("user")
+                .password(passwordEncoder().encode("123456"))
                 .roles("USER")
                 .build();
         return new MapReactiveUserDetailsService(user);

@@ -1,2 +1,3 @@
 jwt:
+  secret-key: anykeyfornowhowevertherequirementforthekeyis256bitthatmeansthekeymustbelong
   token-expiration-seconds: 1800
